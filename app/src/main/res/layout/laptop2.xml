@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardElevation="30dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productimage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/laptop1"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/productdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HP Victus Gaming Latest AMD Ryzen 7-5800H 16.1 inch(40.9 cm) FHD Gaming Laptop (16GB RAM/ 512GB SSD/4Gb RTX 3050 Graphics/Flicker Free/144Hz Display/B and O/Backlit Kb/Win 11/MSO/Xbox Pass) 16-e0351ax"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_star_24"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_star_24"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_star_24"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_star_24"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_star_half_24"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/productrank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 ranking"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/productprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹80,490"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
